@@ -1,6 +1,6 @@
-Python program for the NASA App Challenge
+# Python program for the NASA App Challenge
 
-Objective:
+## Objective:
 
 -Connect to NASA’s EarthSearch platform.
 
@@ -12,3 +12,4 @@ Objective:
 
 
  bibliografy: https://search.earthdata.nasa.gov/search/granules?p=C2930726639-LARC_CLOUD&pg[0][v]=f&pg[0][gsk]=-start_date&tl=1725260797.587!4!!
+
