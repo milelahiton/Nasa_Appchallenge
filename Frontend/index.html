@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Clean Breath — Every Breath Counts</title>
+
+  <!-- Modern font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="brand">
+      <img src="logo.png" alt="Clean Breath logo" class="logo large" />
+      <div class="brand-text">
+        <h1>Clean Breath</h1>
+        <p class="tag">Every Breath Counts</p>
+      </div>
+    </div>
+
+    <!-- Search bar redesigned -->
+    <div class="search-bar">
+      <input id="cityInput" type="text" class="search-input" placeholder="🔍 Search city or coordinates..." />
+      <button id="btnSearch" class="btn primary">Search</button>
+      <button id="btnUseLocation" class="btn ghost">📍</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- General description -->
+    <section class="description card small-text">
+      <h2>🌍 Clean Breath – Every Breath Counts</h2>
+      <p>
+        "The air we breathe should not make us sick." Today, 99% of the world’s population breathes air exceeding WHO safety limits.
+        Every year, 7 million people die prematurely from diseases related to air pollution — heart attacks, strokes, lung cancer, chronic respiratory diseases.
+      </p>
+
+      <h3>🚀 Our Mission</h3>
+      <p>
+        In the information age, we can’t keep breathing blindly. <strong>Clean Breath</strong> forecasts real-time air quality
+        using satellite data (TEMPO), local stations, citizen sensors, and meteorological inputs.
+      </p>
+    </section>
+
+    <!-- User Profile -->
+    <section class="controls card">
+      <h3>User Health Profile</h3>
+      <div class="profile-grid">
+        <label><input type="checkbox" id="pfAsthma"> Asthma / COPD</label>
+        <label><input type="checkbox" id="pfAllergy"> Allergies</label>
+        <label><input type="checkbox" id="pfCardiac"> Heart Condition</label>
+        <label><input type="checkbox" id="pfAge"> Children / 65+</label>
+      </div>
+      <small class="muted">Customize your air health recommendations.</small>
+    </section>
+
+    <!-- AQI Results -->
+    <section id="resultWrap" class="card result hidden" aria-live="polite">
+      <div class="aqi-panel">
+        <div class="aqi-left">
+          <div id="icaLevel" class="ica-level">—</div>
+          <div id="icaVal" class="ica-value">—</div>
+          <div id="icaDesc" class="ica-desc">—</div>
+        </div>
+        <div class="aqi-right">
+          <div id="components" class="components-grid"></div>
+        </div>
+      </div>
+      <div id="recs" class="recommendations"></div>
+    </section>
+
+    <!-- Community -->
+    <section class="community card">
+      <h3>🌎 Community Reports</h3>
+      <p class="muted">Share the pollution situation in your area:</p>
+      <textarea id="communityInput" placeholder="Your experience..." rows="4"></textarea>
+      <button id="btnSubmitCommunity" class="btn primary">Submit</button>
+      <div id="communityPosts" class="community-posts"></div>
+    </section>
+
+  <section class="prediction card">
+  <h3>📈 Predictive Forecast</h3>
+  <p class="muted">
+    Atmospheric data prediction using Support Vector Machines (SVM) and Artificial Intelligence.
+  </p>
+
+  <div class="forecast-image-container">
+    <div class="forecast-wrapper">
+      <img src="prediccion.png" alt="Predictive AI gas forecast" class="forecast-img animated" />
+      <div class="forecast-caption">Prediction of Atmospheric Data using SVM & AI</div>
+    </div>
+  </div>
+</section>
