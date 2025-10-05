@@ -16,8 +16,8 @@ That’s why we created Clean Breath, a web and mobile application that forecast
 
 
 ## System Architecture Diagram
+<img width="912" height="337" alt="image" src="https://github.com/user-attachments/assets/4ad9b94c-b9a9-4435-8247-ecfe2af68c92" />
 
-<img width="962" height="414" alt="image" src="https://github.com/user-attachments/assets/acb7e564-1ed7-458f-b3c7-95ca77493fc1" />
 <img width="1026" height="370" alt="image" src="https://github.com/user-attachments/assets/775ed85f-c59f-41dc-a7f6-b5e1a2e08927" />
 
 
