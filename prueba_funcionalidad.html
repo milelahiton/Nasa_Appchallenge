@@ -7,7 +7,7 @@
     <!-- Carga de Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
           
-    <!-- Configuración para usar la fuente Inter y colores personalizados -->
+    <!-- ConfiguraciÃ³n para usar la fuente Inter y colores personalizados -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
         body {
@@ -41,7 +41,7 @@
     <!-- PANTALLA DE INICIO (SPLASH SCREEN) -->
     <div id="splash-screen" class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-indigo-600 transition-opacity duration-700 cursor-pointer">
         <div class="animate-pulse">
-            <!-- Ícono de Respiración -->
+            <!-- Ãcono de RespiraciÃ³n -->
             <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 18H7v-1a6 6 0 016-6v12z" />
             </svg>
@@ -55,10 +55,10 @@
     </div>
     <!-- FIN PANTALLA DE INICIO -->
 
-    <!-- Contenedor Principal de la Aplicación -->
+    <!-- Contenedor Principal de la AplicaciÃ³n -->
     <div id="main-app-container" class="w-full max-w-lg bg-white shadow-2xl rounded-3xl p-6 md:p-10 border border-gray-100/50 hidden">
 
-        <!-- MENÚ DE SELECCIÓN DE UBICACIÓN (Paso 1) -->
+        <!-- MENÃš DE SELECCIÃ“N DE UBICACIÃ“N (Paso 1) -->
         <div id="location-prompt-menu" class="text-center p-8 transition-opacity duration-300 hidden">
             <h2 class="text-2xl font-extrabold text-gray-800 mb-2">Paso 1: &iquest;D&oacute;nde quieres ir?</h2>
             <p class="text-gray-500 mb-8">Selecciona tu destino de viaje o ubicaci&oacute;n actual.</p>
@@ -85,9 +85,9 @@
             
             <p id="location-error-status" class="text-sm text-red-600 font-semibold mt-4 hidden p-3 bg-red-100 border border-red-300 rounded-lg"></p>
         </div>
-        <!-- FIN MENÚ DE SELECCIÓN DE UBICACIÓN -->
+        <!-- FIN MENÃš DE SELECCIÃ“N DE UBICACIÃ“N -->
 
-        <!-- MENÚ DE PERFIL DE SALUD (Paso 2 - NUEVO) -->
+        <!-- MENÃš DE PERFIL DE SALUD (Paso 2 - NUEVO) -->
         <div id="health-profile-menu" class="text-center p-8 transition-opacity duration-300 hidden">
             <h2 class="text-2xl font-extrabold text-gray-800 mb-2">Paso 2: Perfil de Salud</h2>
             <p class="text-gray-500 mb-6">Selecciona si t&uacute; o tus compa&ntilde;eros de viaje tienen alguna condici&oacute;n sensible.</p>
@@ -111,7 +111,7 @@
                     </label>
                 </div>
                 
-                <!-- Toggle para Problemas Cardíacos -->
+                <!-- Toggle para Problemas CardÃ­acos -->
                 <div class="flex items-center justify-between p-4 bg-white border border-indigo-200 rounded-xl shadow-sm">
                     <label for="profile-cardiac" class="text-gray-700 font-medium">Problemas Card&iacute;acos o Presi&oacute;n Alta</label>
                     <label class="relative inline-flex items-center cursor-pointer">
@@ -135,18 +135,18 @@
                 Ver Calidad del Aire y Recomendaciones
             </button>
             
-            <!-- Botón para volver atrás (por si se equivocó de ubicación) -->
+            <!-- BotÃ³n para volver atrÃ¡s (por si se equivocÃ³ de ubicaciÃ³n) -->
             <button id="back-to-location-btn" 
                     class="w-full mt-3 p-2 text-sm text-gray-500 hover:text-indigo-600 transition duration-150">
                 &larr; Cambiar Ubicaci&oacute;n
             </button>
         </div>
-        <!-- FIN MENÚ DE PERFIL DE SALUD -->
+        <!-- FIN MENÃš DE PERFIL DE SALUD -->
 
         <!-- Contenido Principal (Paso 3) -->
         <div id="main-content-area" class="relative hidden">
             
-            <!-- Botón para volver al menú de selección -->
+            <!-- BotÃ³n para volver al menÃº de selecciÃ³n -->
             <button id="back-to-menu-btn" 
                     class="absolute top-[-10px] left-[-10px] p-2 bg-gray-100 rounded-full text-gray-600 hover:bg-gray-200 transition duration-150 shadow-md">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -154,7 +154,7 @@
                 </svg>
             </button>
             
-            <!-- Título -->
+            <!-- TÃ­tulo -->
             <div class="text-center mb-8 pt-4">
                 <h1 class="text-3xl font-extrabold text-gray-800">
                     <span class="text-indigo-600">Clean Breath</span>
@@ -164,7 +164,7 @@
                 </p>
             </div>
 
-            <!-- Formulario de Búsqueda de Ciudad (Oculto, solo para mostrar la ciudad actual) -->
+            <!-- Formulario de BÃºsqueda de Ciudad (Oculto, solo para mostrar la ciudad actual) -->
             <div class="mb-8">
                 <div class="flex space-x-2">
                     <input type="text" id="city-input" placeholder="Buscar ciudad, ej: 'Madrid, ES' o 'San Luis, AR'"
@@ -195,17 +195,17 @@
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-red-600 mx-auto mb-4" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
                 </svg>
-                <p class="text-2xl font-bold text-red-800">¡Algo sali&oacute; mal!</p>
+                <p class="text-2xl font-bold text-red-800">Â¡Algo sali&oacute; mal!</p>
                 <p class="text-base text-red-600 mt-2">
                     No pudimos obtener la calidad del aire. Por favor, verifica tu clave API o la conexi&oacute;n.
                 </p>
                 <code id="error-detail" class="text-xs text-red-500 block mt-2 p-2 bg-red-100 rounded"></code>
             </div>
 
-            <!-- Sección de Datos del ICA (Success State) -->
+            <!-- SecciÃ³n de Datos del ICA (Success State) -->
             <div id="airQualityData" class="hidden transition-opacity duration-300">
                 
-                <!-- Tarjeta ICA Principal (Gradientes dinámicos y Hover Effect) -->
+                <!-- Tarjeta ICA Principal (Gradientes dinÃ¡micos y Hover Effect) -->
                 <div id="ica-card" class="rounded-2xl p-8 text-white text-center shadow-2xl bg-gradient-to-br transform transition duration-500 hover:scale-[1.05] cursor-pointer">
                     <p class="text-lg font-light opacity-90">&Iacute;ndice de Calidad del Aire (ICA)</p>
                     <p id="ica-value" class="text-8xl font-extrabold mt-1 mb-2"></p>
@@ -213,11 +213,11 @@
                     <p id="ica-description" class="text-sm font-light mt-3 italic opacity-90"></p>
                 </div>
 
-                <!-- SECCIÓN: RECOMENDACIONES PERSONALIZADAS -->
+                <!-- SECCIÃ“N: RECOMENDACIONES PERSONALIZADAS -->
                 <div class="mt-8">
                     <h2 class="text-xl font-bold text-gray-800 border-b-2 border-indigo-100 pb-3 mb-4">Recomendaciones **PERSONALIZADAS**</h2>
                     <div id="health-recommendations" class="space-y-3">
-                        <!-- Las recomendaciones se inyectarán aquí -->
+                        <!-- Las recomendaciones se inyectarÃ¡n aquÃ­ -->
                     </div>
                 </div>
 
@@ -225,17 +225,17 @@
                 <div class="mt-8 space-y-4">
                     <h2 class="text-xl font-bold text-gray-800 border-b-2 border-indigo-100 pb-3">Detalle de Contaminantes</h2>
                     <div id="contaminant-list" class="space-y-3">
-                        <!-- Los contaminantes se inyectarán aquí -->
+                        <!-- Los contaminantes se inyectarÃ¡n aquÃ­ -->
                     </div>
                 </div>
             </div>
 
-            <!-- Información de Ubicación Fija y Créditos -->
+            <!-- InformaciÃ³n de UbicaciÃ³n Fija y CrÃ©ditos -->
             <div class="mt-10 pt-5 border-t border-gray-100 text-sm text-gray-500 text-center">
                 <p id="coords-display" class="mt-1">Coordenadas: Latitud N/A, Longitud N/A</p>
                 <p class="mt-1 font-semibold text-gray-600">
                     Datos potenciados por TEMPO.
-		La misión TEMPO es una colaboración entre el Observatorio Astrofísico Smithsoniano y la NASA; cuenta con el apoyo de la Dirección de Misiones Científicas de la NASA.
+		La misiÃ³n TEMPO es una colaboraciÃ³n entre el Observatorio AstrofÃ­sico Smithsoniano y la NASA; cuenta con el apoyo de la DirecciÃ³n de Misiones CientÃ­ficas de la NASA.
                 </p>
             </div>
             
@@ -245,7 +245,7 @@
     </div>
 
     <script>
-        // CONFIGURACIÓN CLAVE
+        // CONFIGURACIÃ“N CLAVE
         const API_KEY = "bf0d6a13c68197b1c3b2e04206adb56f";
         const GEO_API_URL = "https://api.openweathermap.org/geo/1.0/direct";
         const REVERSE_GEO_API_URL = "https://api.openweathermap.org/geo/1.0/reverse";
@@ -308,7 +308,7 @@
         // --- UTILIDADES DE INTERFAZ Y FLUJO ---
 
         /**
-         * Muestra el menú de Ubicación (Paso 1).
+         * Muestra el menÃº de UbicaciÃ³n (Paso 1).
          */
         function showLocationMenu() {
             mainContentArea.classList.add('hidden');
@@ -318,7 +318,7 @@
         }
 
         /**
-         * Muestra el menú de Perfil de Salud (Paso 2).
+         * Muestra el menÃº de Perfil de Salud (Paso 2).
          */
         function showHealthProfileMenu() {
             locationPromptMenu.classList.add('hidden');
@@ -336,7 +336,7 @@
         }
 
         /**
-         * Oculta la pantalla de inicio (Splash Screen) y muestra el menú de Ubicación.
+         * Oculta la pantalla de inicio (Splash Screen) y muestra el menÃº de UbicaciÃ³n.
          */
         function hideSplashScreen() {
             splashScreen.classList.add('opacity-0');
@@ -361,7 +361,7 @@
         }
         
         /**
-         * Mapea el valor del ICA (escala OpenWeather 1-5) a una categoría y gradiente de color.
+         * Mapea el valor del ICA (escala OpenWeather 1-5) a una categorÃ­a y gradiente de color.
          */
         function getIcaDetails(icaValueOpenWeather) {
             switch (icaValueOpenWeather) {
@@ -420,7 +420,7 @@
 
             const isSensitive = profile.asthma || profile.allergies || profile.cardiac || profile.ageSensitive;
 
-            // --- LÓGICA DE RECOMENDACIONES GENERALES ---
+            // --- LÃ“GICA DE RECOMENDACIONES GENERALES ---
             
             switch (icaValue) {
                 case 1: // Excelente
@@ -430,12 +430,12 @@
                     break;
                 case 2: // Aceptable
                     icon = `<svg xmlns="http://www.w3.org/2000/svg" class="recommendation-icon text-lime-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>`;
-                    generalAdvice = "La calidad del aire es aceptable. No se requieren medidas especiales para la población general.";
+                    generalAdvice = "La calidad del aire es aceptable. No se requieren medidas especiales para la poblaciÃ³n general.";
                     bgColor = "bg-lime-50 border-lime-200";
                     break;
                 case 3: // Moderado
                     icon = `<svg xmlns="http://www.w3.org/2000/svg" class="recommendation-icon text-orange-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>`;
-                    generalAdvice = "Se recomienda **reducir el esfuerzo físico prolongado** al aire libre.";
+                    generalAdvice = "Se recomienda **reducir el esfuerzo fÃ­sico prolongado** al aire libre.";
                     bgColor = "bg-orange-50 border-orange-200";
                     break;
                 case 4: // Pobre
@@ -452,7 +452,7 @@
                     return;
             }
 
-            // --- LÓGICA DE RECOMENDACIONES SENSIBLES (SI APLICA) ---
+            // --- LÃ“GICA DE RECOMENDACIONES SENSIBLES (SI APLICA) ---
             if (isSensitive) {
                 let sensitiveList = [];
                 if (profile.asthma) sensitiveList.push("Asma/Respiratorio");
@@ -499,7 +499,7 @@
             healthRecommendationsContainer.innerHTML = recommendationHtml;
         }
 
-        // --- MANEJO DE APIS Y GEOLOCALIZACIÓN ---
+        // --- MANEJO DE APIS Y GEOLOCALIZACIÃ“N ---
 
         /**
          * Llama a la API de Calidad del Aire y actualiza la interfaz.
@@ -512,7 +512,7 @@
             
             locationNameDisplay.innerHTML = `Monitoreando: ${currentCity}`;
             coordsDisplay.innerHTML = `Coordenadas: Latitud ${currentLat.toFixed(2)}, Longitud ${currentLon.toFixed(2)}`;
-            cityInput.value = currentCity.replace(/&aacute;/g, 'á').replace(/&eacute;/g, 'é').replace(/&iacute;/g, 'í').replace(/&oacute;/g, 'ó').replace(/&uacute;/g, 'ú');
+            cityInput.value = currentCity.replace(/&aacute;/g, 'Ã¡').replace(/&eacute;/g, 'Ã©').replace(/&iacute;/g, 'Ã­').replace(/&oacute;/g, 'Ã³').replace(/&uacute;/g, 'Ãº');
 
             const url = `${AIR_POLLUTION_API_URL}?lat=${currentLat}&lon=${currentLon}&appid=${API_KEY}`;
 
@@ -556,15 +556,15 @@
         }
         
         /**
-         * Convierte el nombre de una ciudad en coordenadas (Geocodificación).
+         * Convierte el nombre de una ciudad en coordenadas (GeocodificaciÃ³n).
          */
         async function geocodeCity(cityQuery) {
             // No cambiamos la vista, solo buscamos las coordenadas
-            const normalizedQuery = cityQuery.replace(/&aacute;/g, 'á').replace(/&eacute;/g, 'é').replace(/&iacute;/g, 'í').replace(/&oacute;/g, 'ó').replace(/&uacute;/g, 'ú');
+            const normalizedQuery = cityQuery.replace(/&aacute;/g, 'Ã¡').replace(/&eacute;/g, 'Ã©').replace(/&iacute;/g, 'Ã­').replace(/&oacute;/g, 'Ã³').replace(/&uacute;/g, 'Ãº');
 
             if (!cityQuery.trim()) {
                 locationErrorStatus.classList.remove('hidden');
-                locationErrorStatus.innerHTML = "<strong>Error:</strong> El campo de ciudad no puede estar vacío.";
+                locationErrorStatus.innerHTML = "<strong>Error:</strong> El campo de ciudad no puede estar vacÃ­o.";
                 return false;
             }
             
@@ -584,7 +584,7 @@
                         displayName += `, ${location.country}`;
                     }
                     
-                    currentCity = displayName.replace('á', '&aacute;').replace('é', '&eacute;').replace('í', '&iacute;').replace('ó', '&oacute;').replace('ú', '&uacute;');
+                    currentCity = displayName.replace('Ã¡', '&aacute;').replace('Ã©', '&eacute;').replace('Ã­', '&iacute;').replace('Ã³', '&oacute;').replace('Ãº', '&uacute;');
                     
                     cityInput.value = displayName; // Para el campo de texto
                     
@@ -602,7 +602,7 @@
         }
         
         /**
-         * Convierte coordenadas a nombre de ciudad (Geocodificación Inversa).
+         * Convierte coordenadas a nombre de ciudad (GeocodificaciÃ³n Inversa).
          */
         async function reverseGeocodeCoordinates(lat, lon) {
             
@@ -619,7 +619,7 @@
                         displayName += `, ${location.country}`;
                     }
                     
-                    currentCity = displayName.replace('á', '&aacute;').replace('é', '&eacute;').replace('í', '&iacute;').replace('ó', '&oacute;').replace('ú', '&uacute;');
+                    currentCity = displayName.replace('Ã¡', '&aacute;').replace('Ã©', '&eacute;').replace('Ã­', '&iacute;').replace('Ã³', '&oacute;').replace('Ãº', '&uacute;');
                     cityInput.value = currentCity; 
                 } else {
                     currentCity = `Ubicaci&oacute;n Actual (Lat: ${lat.toFixed(2)}, Lon: ${lon.toFixed(2)})`;
@@ -628,14 +628,14 @@
                 
                 showHealthProfileMenu();
             } catch (error) {
-                // Si falla la geocodificación inversa, aun podemos continuar
+                // Si falla la geocodificaciÃ³n inversa, aun podemos continuar
                 currentCity = `Ubicaci&oacute;n Actual (Lat: ${lat.toFixed(2)}, Lon: ${lon.toFixed(2)})`;
                 showHealthProfileMenu();
             }
         }
 
         /**
-         * Manejador de éxito de Geolocalización.
+         * Manejador de Ã©xito de GeolocalizaciÃ³n.
          */
         function handleGeolocationSuccess(position) {
             currentLat = position.coords.latitude;
@@ -646,7 +646,7 @@
         }
 
         /**
-         * Manejador de error de Geolocalización.
+         * Manejador de error de GeolocalizaciÃ³n.
          */
         function handleGeolocationError(error) {
             locationPromptMenu.classList.remove('hidden', 'opacity-0'); 
@@ -664,7 +664,7 @@
         }
 
         /**
-         * Inicia el flujo de solicitud de Geolocalización.
+         * Inicia el flujo de solicitud de GeolocalizaciÃ³n.
          */
         function startGeolocationFlow() {
             locationErrorStatus.classList.remove('hidden', 'text-red-600', 'bg-red-100', 'border-red-300');
@@ -701,12 +701,12 @@
         // 1. Splash Screen Click
         splashScreen.addEventListener('click', hideSplashScreen);
 
-        // 2. Menu Button: Ubicación Actual (Paso 1)
+        // 2. Menu Button: UbicaciÃ³n Actual (Paso 1)
         locationCurrentBtn.addEventListener('click', startGeolocationFlow);
 
         // 3. Menu Button: Buscar Destino (Paso 1)
         locationManualBtn.addEventListener('click', async () => {
-             // Ocultar el menú de ubicación y mostrar temporalmente el área de búsqueda
+             // Ocultar el menÃº de ubicaciÃ³n y mostrar temporalmente el Ã¡rea de bÃºsqueda
              locationPromptMenu.classList.add('hidden');
              mainContentArea.classList.remove('hidden');
              
@@ -732,7 +732,7 @@
 
              const closeAndGoBack = () => {
                  cityModal.remove();
-                 // Si se cancela o falla, volvemos al menú de ubicación
+                 // Si se cancela o falla, volvemos al menÃº de ubicaciÃ³n
                  mainContentArea.classList.add('hidden');
                  showLocationMenu();
              };
@@ -745,7 +745,7 @@
                      const success = await geocodeCity(city);
                      if (success) {
                         cityModal.remove();
-                        // Una vez que la ubicación se encontró, vamos al perfil de salud
+                        // Una vez que la ubicaciÃ³n se encontrÃ³, vamos al perfil de salud
                         showHealthProfileMenu(); 
                      }
                  }
@@ -757,14 +757,14 @@
              });
         });
         
-        // 4. Botón Volver al menú de Ubicación (Desde Perfil de Salud)
+        // 4. BotÃ³n Volver al menÃº de UbicaciÃ³n (Desde Perfil de Salud)
         backToLocationBtn.addEventListener('click', showLocationMenu);
 
-        // 5. Botón Confirmar Perfil (Desde Perfil de Salud, Paso 2)
+        // 5. BotÃ³n Confirmar Perfil (Desde Perfil de Salud, Paso 2)
         confirmProfileBtn.addEventListener('click', confirmProfile);
         
-        // 6. Botón para volver al menú principal (Desde Resultados, Paso 3)
-        // Ahora vuelve al menú de perfil para un ajuste rápido.
+        // 6. BotÃ³n para volver al menÃº principal (Desde Resultados, Paso 3)
+        // Ahora vuelve al menÃº de perfil para un ajuste rÃ¡pido.
         backToMenuBtn.addEventListener('click', () => {
             showHealthProfileMenu();
         });
@@ -773,3 +773,4 @@
     </script>
 </body>
 </html>
+
