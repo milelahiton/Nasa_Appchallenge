@@ -10,3 +10,5 @@ Objective:
 
 -Publish the data to a pub/sub broker or database in a compatible format for further analysis or integration.
 
+
+ bibliografy: https://search.earthdata.nasa.gov/search/granules?p=C2930726639-LARC_CLOUD&pg[0][v]=f&pg[0][gsk]=-start_date&tl=1725260797.587!4!!
